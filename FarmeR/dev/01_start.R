@@ -20,12 +20,12 @@
 ##
 golem::fill_desc(
   pkg_name = "FarmeR", # The Name of the package containing the App
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
+  pkg_title = "FarmeR", # The Title of the package containing the App
+  pkg_description = "FarmeR is a package to help user haing a quick access to his data, with all info. He can directly add it to the database.", # The Description of the package containing the App
+  author_first_name = "Lisa", # Your First Name
+  author_last_name = "PERES", # Your Last Name
+  author_email = "lisa.peres@laposte.net", # Your Email
+  repo_url = "https://github.com/PeresLisa/Shiny_app_for_farm_management" # The URL of the GitHub Repo (optional)
 )
 
 ## Set {golem} options ----
@@ -50,7 +50,7 @@ golem::use_recommended_tests()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon() # path = "path/to/ico". Can be an online file.
+golem::use_favicon("inst/app/www/favicon.ico") # path = "path/to/ico". Can be an online file.
 # golem::remove_favicon() # Uncomment to remove the default favicon
 
 ## Add helper functions ----
@@ -58,6 +58,3 @@ golem::use_utils_ui(with_test = TRUE)
 golem::use_utils_server(with_test = TRUE)
 
 # You're now set! ----
-
-# go to dev/02_dev.R
-rstudioapi::navigateToFile("dev/02_dev.R")
